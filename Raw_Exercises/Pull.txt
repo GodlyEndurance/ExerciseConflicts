@@ -1,0 +1,35 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Calisthenics ---
+
+Pull | Pull-Ups
+  Agonist:    Lats (Latissimus Dorsi), Biceps Brachii
+  Synergist:  Rhomboids, Posterior Deltoid, Teres Major, Lower Traps, Brachialis
+  Antagonist: Pectoralis Major, Anterior Deltoid, Triceps Brachii
+  Stabilizer: Forearm Flexors (Grip), Rotator Cuff
+
+Pull | Dead Hangs
+  Agonist:    Forearm Flexors (Grip), Lats (Latissimus Dorsi)
+  Synergist:  (—)
+  Antagonist: (Minimal dynamic antagonist)
+  Stabilizer: Rotator Cuff
+
+--- Non-Calisthenics ---
+
+Pull | Bent-Over Row
+  Agonist:    Lats (Latissimus Dorsi), Rhomboids, Middle Traps, Lower Traps, Posterior Deltoid, Biceps Brachii
+  Synergist:  Brachialis, Brachioradialis, Teres Major
+  Antagonist: Pectoralis Major, Anterior Deltoid, Triceps Brachii
+  Stabilizer: Erector Spinae, Gluteus Maximus, Hamstrings
+
+Pull | Single-Arm Bent-Over Row
+  Agonist:    Lats (Latissimus Dorsi), Rhomboids, Posterior Deltoid, Biceps Brachii
+  Synergist:  Brachialis, Teres Major
+  Antagonist: Pectoralis Major, Anterior Deltoid
+  Stabilizer: Obliques, Erector Spinae
+
+Pull | Row (any variation)
+  Agonist:    Lats (Latissimus Dorsi), Rhomboids, Middle Traps, Posterior Deltoid, Biceps Brachii
+  Synergist:  Brachialis, Teres Major
+  Antagonist: Pectoralis Major, Anterior Deltoid, Triceps Brachii
+  Stabilizer: Erector Spinae

@@ -1,0 +1,47 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Calisthenics ---
+
+Lower | Glute Bridges
+  Agonist:    Gluteus Maximus
+  Synergist:  Hamstrings
+  Antagonist: Hip Flexors
+  Stabilizer: Erector Spinae
+
+Lower | Step-Up / Lunges
+  Agonist:    Quadriceps, Gluteus Maximus
+  Synergist:  Hamstrings, Adductors, Gastrocnemius
+  Antagonist: Hamstrings, Hip Flexors
+  Stabilizer: Gluteus Medius & Minimus
+
+--- Non-Calisthenics ---
+
+Lower | RDL
+  Agonist:    Hamstrings, Gluteus Maximus
+  Synergist:  Erector Spinae
+  Antagonist: Hip Flexors, Quadriceps
+  Stabilizer: Lats (Latissimus Dorsi)
+
+Lower | Squats
+  Agonist:    Quadriceps, Gluteus Maximus
+  Synergist:  Hamstrings, Adductors, Erector Spinae
+  Antagonist: Hamstrings, Hip Flexors
+  Stabilizer: Gluteus Medius & Minimus
+
+Lower | BB Front Squat
+  Agonist:    Quadriceps
+  Synergist:  Gluteus Maximus, Adductors, Erector Spinae
+  Antagonist: Hamstrings, Hip Flexors
+  Stabilizer: (—)
+
+Lower | Leg Press / Pendulum Squat
+  Agonist:    Quadriceps, Gluteus Maximus
+  Synergist:  Adductors, Hamstrings
+  Antagonist: (Supported – minimal antagonist demand)
+  Stabilizer: Gluteus Medius & Minimus
+
+Lower | Hip Thrust
+  Agonist:    Gluteus Maximus
+  Synergist:  Hamstrings
+  Antagonist: Hip Flexors
+  Stabilizer: Erector Spinae

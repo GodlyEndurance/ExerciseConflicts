@@ -1,0 +1,29 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Calisthenics ---
+
+Push | Push-Ups
+  Agonist:    Pectoralis Major, Anterior Deltoid
+  Synergist:  Triceps Brachii, Serratus Anterior
+  Antagonist: Lats (Latissimus Dorsi), Biceps Brachii, Posterior Deltoid, Rhomboids
+  Stabilizer: Rectus Abdominis, Obliques, Erector Spinae, Rotator Cuff
+
+Push | Dips
+  Agonist:    Pectoralis Major, Anterior Deltoid
+  Synergist:  Triceps Brachii, Serratus Anterior
+  Antagonist: Lats (Latissimus Dorsi), Biceps Brachii, Posterior Deltoid, Rhomboids
+  Stabilizer: Rotator Cuff
+
+--- Non-Calisthenics ---
+
+Push | Shoulder Press
+  Agonist:    Anterior Deltoid, Medial Deltoid
+  Synergist:  Triceps Brachii, Pectoralis Major, Serratus Anterior, Upper Traps
+  Antagonist: Lats (Latissimus Dorsi), Biceps Brachii
+  Stabilizer: Rotator Cuff
+
+Push | Bench Press
+  Agonist:    Pectoralis Major, Anterior Deltoid
+  Synergist:  Triceps Brachii, Serratus Anterior
+  Antagonist: Lats (Latissimus Dorsi), Biceps Brachii, Posterior Deltoid, Rhomboids
+  Stabilizer: Rotator Cuff

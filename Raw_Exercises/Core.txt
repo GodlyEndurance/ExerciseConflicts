@@ -1,0 +1,20 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+Core | Hanging Leg/Knee Raises
+  Agonist:    Hip Flexors, Rectus Abdominis
+  Synergist:  Obliques, Rectus Abdominis
+  Antagonist: Erector Spinae
+  Stabilizer: Forearm Flexors (Grip), Lats (Latissimus Dorsi)
+
+Core | Sit-up / Dragon Flag / Ab Rollers
+  Agonist:    Rectus Abdominis, Hip Flexors
+  Synergist:  Obliques
+  Antagonist: Erector Spinae
+  Stabilizer: Lats (Latissimus Dorsi), Hip Flexors, Forearm Flexors (Grip)
+
+Core | Russian Twists
+  Agonist:    Obliques
+  Synergist:  Rectus Abdominis
+  Antagonist: Obliques, Erector Spinae
+  Stabilizer: Hip Flexors
+
