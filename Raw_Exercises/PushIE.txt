@@ -1,0 +1,33 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Isolation ---
+
+Push | Chest Flyes
+  Agonist:    Pectoralis Major
+  Synergist:  Anterior Deltoid, Serratus Anterior
+  Antagonist: Rhomboids, Middle Traps, Posterior Deltoid
+  Stabilizer: Rotator Cuff, Biceps Brachii
+
+Push | Front Raises
+  Agonist:    Anterior Deltoid
+  Synergist:  Medial Deltoid, Pectoralis Major
+  Antagonist: Posterior Deltoid, Lats (Latissimus Dorsi)
+  Stabilizer: Rotator Cuff, Serratus Anterior
+
+Push | French Press
+  Agonist:    Triceps Brachii
+  Synergist:  (—)
+  Antagonist: Biceps Brachii
+  Stabilizer: Anterior Deltoid, Rotator Cuff
+
+Push | Skull Crushers
+  Agonist:    Triceps Brachii
+  Synergist:  (—)
+  Antagonist: Biceps Brachii
+  Stabilizer: Anterior Deltoid, Rotator Cuff
+
+Push | Eugene Extensions
+  Agonist:    Triceps Brachii
+  Synergist:  (—)
+  Antagonist: Biceps Brachii
+  Stabilizer: Anterior Deltoid, Rotator Cuff

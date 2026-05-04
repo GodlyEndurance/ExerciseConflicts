@@ -1,0 +1,63 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Isolation ---
+
+Pull | Side-leaning Lateral Raises
+  Agonist:    Medial Deltoid
+  Synergist:  Rotator Cuff, Upper Traps
+  Antagonist: Lats (Latissimus Dorsi)
+  Stabilizer: Serratus Anterior
+
+Pull | Incline Y-Raise
+  Agonist:    Posterior Deltoid, Rotator Cuff
+  Synergist:  Lower Traps, Middle Traps, Rhomboids
+  Antagonist: Anterior Deltoid, Pectoralis Major
+  Stabilizer: Serratus Anterior
+
+Pull | Shoulder Shrugs
+  Agonist:    Upper Traps
+  Synergist:  Middle Traps
+  Antagonist: Lower Traps
+  Stabilizer: Rhomboids
+
+Pull | Kelso Shrugs
+  Agonist:    Rhomboids, Middle Traps
+  Synergist:  Lower Traps
+  Antagonist: Serratus Anterior
+  Stabilizer: Upper Traps
+
+Pull | Preacher Curls
+  Agonist:    Biceps Brachii, Brachialis
+  Synergist:  Brachioradialis
+  Antagonist: Triceps Brachii
+  Stabilizer: (—)
+
+Pull | Zottman Hammer Curls
+  Agonist:    Brachioradialis, Brachialis, Biceps Brachii
+  Synergist:  Forearm Flexors (Grip)
+  Antagonist: Triceps Brachii
+  Stabilizer: (—)
+
+Pull | Neck Curl
+  Agonist:    (—)
+  Synergist:  (—)
+  Antagonist: (—)
+  Stabilizer: (—)
+
+Pull | Neck Extension
+  Agonist:    (—)
+  Synergist:  (—)
+  Antagonist: (—)
+  Stabilizer: (—)
+
+Pull | Neck Lateral Flexion
+  Agonist:    (—)
+  Synergist:  (—)
+  Antagonist: (—)
+  Stabilizer: (—)
+
+Pull | Wrist Rollers
+  Agonist:    Forearm Flexors (Grip)
+  Synergist:  Brachioradialis
+  Antagonist: (—)
+  Stabilizer: Biceps Brachii

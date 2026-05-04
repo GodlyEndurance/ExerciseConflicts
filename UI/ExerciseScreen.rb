@@ -19,10 +19,13 @@ class ExerciseScreen
       return :quit if ex_choice == 0
 
       show_results(ex_opts[ex_choice])
+      save_entry(@type, 'Exercise', ex_opts[ex_choice]) if yes_no("Save \"#{ex_opts[ex_choice]}\" to PossibleWorkout.txt?")
 
       case next_action
-      when :quit        then return :quit
-      when :change_type then return :back_to_types
+      when :quit                 then return :quit
+      when :change_type          then return :back_to_types
+      when :switch_to_isolation  then return :switch_to_isolation
+      when :back_to_screen_select then return :back_to_screen_select
       # :same_type => continue exercise loop
       end
     end
@@ -60,10 +63,15 @@ class ExerciseScreen
 
   def next_action
     puts "\n#{indent}What would you like to do next?"
-    choice = ask({ 1 => "Same workout type (#{@type})", 2 => "Different workout type" })
+    choice = ask({ 1 => "Same workout type (#{@type})",
+                   2 => "Switch to Isolation Screen (#{@type})",
+                   3 => "Back to screen select (#{@type})",
+                   4 => "Different workout type" })
     case choice
     when 0 then :quit
-    when 2 then :change_type
+    when 2 then :switch_to_isolation
+    when 3 then :back_to_screen_select
+    when 4 then :change_type
     else        :same_type
     end
   end

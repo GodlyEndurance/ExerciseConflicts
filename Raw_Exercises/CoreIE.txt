@@ -1,0 +1,21 @@
+Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
+
+--- Isolation ---
+
+Core | Hanging Leg/Knee Raises
+  Agonist:    Hip Flexors, Rectus Abdominis
+  Synergist:  Obliques
+  Antagonist: Erector Spinae, Gluteus Maximus
+  Stabilizer: (—)
+
+Core | Sit-up / Dragon Flag / Ab Rollers
+  Agonist:    Rectus Abdominis, Hip Flexors
+  Synergist:  Obliques
+  Antagonist: Erector Spinae
+  Stabilizer: (—)
+
+Core | Russian Twists
+  Agonist:    Obliques
+  Synergist:  Rectus Abdominis
+  Antagonist: Erector Spinae
+  Stabilizer: Hip Flexors

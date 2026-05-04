@@ -45,3 +45,5 @@ Lower | Hip Thrust
   Synergist:  Hamstrings
   Antagonist: Hip Flexors
   Stabilizer: Erector Spinae
+
+  

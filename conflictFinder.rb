@@ -172,13 +172,17 @@ def parse_workout_file(path, workout, valid_muscles)
 end
 
 # Builds and returns a workout_map hash from all workout text files.
+# Each type maps to { ce: WorkoutType, ie: WorkoutType }.
 def inputHandler
   valid_muscles = Database.instance.muscles.map(&:downcase).to_set
-  workout_map   = WORKOUT_KEYS.each_with_object({}) { |t, h| h[t] = WorkoutType.new(t) }
+  workout_map   = WORKOUT_KEYS.each_with_object({}) do |t, h|
+    h[t] = { ce: WorkoutType.new("#{t} (Compound)"), ie: WorkoutType.new("#{t} (Isolation)") }
+  end
 
   WORKOUT_KEYS.each do |type|
-    path = File.join(File.dirname(__FILE__), 'Raw_Exercises', "#{type}.txt")
-    parse_workout_file(path, workout_map[type], valid_muscles) # essentially a void mutator function
+    base = File.join(File.dirname(__FILE__), 'Raw_Exercises')
+    parse_workout_file(File.join(base, "#{type}CE.txt"), workout_map[type][:ce], valid_muscles)
+    parse_workout_file(File.join(base, "#{type}IE.txt"), workout_map[type][:ie], valid_muscles)
   end
 
   workout_map
@@ -213,19 +217,12 @@ main()
 
 =begin
 TO DO:
-1. Make it so the UI also asks for muscles, instead of just exercises.
-  Naturally, the muscles will need to check for the agonist, synergist, etc.
-  Muscle screen will display ALL of the muscles for the particualr workout type.
+[DONE] Workout Type Screen -> Exercise Screen or Isolation Screen
+  Exercise Screen: shows conflicts / non-conflicts for a selected exercise.
+  Isolation Screen: shows all exercises in the workout that target a selected muscle.
 
-Hmmm... How about this:
-1. List out the muscles targeted for that exercise. We only did the conficts and non-conflicts.
-
-2. Workout Type Screen -> Muscle Screen or Exercise Screen
-  If Exercise Screen, then conflicts
-  If Muscle Screen, then exercises for each muscle.
-  Ask for whether the user wants a same Workout Type; different Workout Type; 
-    an exercise from said muscle; or to quit.
-    -> This is especially helpful for looking if an isolation exercise will conflict
-    with a compound exercise.
+[DONE] After viewing results (either screen), prompt to save the exercise or muscle
+  to PossibleWorkout.txt. Entries are grouped by workout type in that file
+  (e.g. all Pull entries together, then all Push entries, etc.).
 
 =end

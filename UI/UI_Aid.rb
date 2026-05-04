@@ -39,4 +39,52 @@ module UIAid
       puts "#{indent}Invalid choice, try again."
     end
   end
+
+  def yes_no(msg)
+    loop do
+      input = prompt("#{msg} (y/n)")
+      return true  if input&.downcase == 'y'
+      return false if input&.downcase == 'n'
+      puts "#{indent}Enter y or n."
+    end
+  end
+
+  OUTPUT_PATH = File.join(File.dirname(__FILE__), '..', 'PossibleWorkout.txt')
+
+  # Appends +entry+ (tagged with +label+) under the +type+ section of
+  # PossibleWorkout.txt, keeping all sections grouped by workout type.
+  def save_entry(type, label, entry)
+    sections = Hash.new { |h, k| h[k] = [] }
+
+    if File.exist?(OUTPUT_PATH)
+      current_section = nil
+      File.foreach(OUTPUT_PATH) do |line|
+        line = line.chomp
+        if line =~ /^=== (.+) ===/
+          current_section = $1
+        elsif current_section && !line.strip.empty?
+          sections[current_section] << line
+        end
+      end
+    end
+
+    tagged = "#{entry} (#{label})"
+    if sections[type].include?(tagged)
+      puts "\n#{indent}Already saved."
+      return
+    end
+
+    sections[type] << tagged
+
+    File.open(OUTPUT_PATH, 'w') do |f|
+      WORKOUT_KEYS.each do |t|
+        next if sections[t].empty?
+        f.puts "=== #{t} ==="
+        sections[t].each { |e| f.puts e }
+        f.puts
+      end
+    end
+
+    puts "\n#{indent}Saved to PossibleWorkout.txt! (๑>◡<๑)"
+  end
 end
