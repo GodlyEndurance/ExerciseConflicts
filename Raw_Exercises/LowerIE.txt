@@ -3,31 +3,37 @@ Form: (Type of Workout) (Name) (Agonist) (Synergist) (Antagonist) (Stabilizer)
 --- Isolation ---
 
 Lower | Calf Raises Tip Toe, Vertical
-  Agonist:    Gastrocnemius
+  Agonist:    Gastrocnemius, Soleus
   Synergist:  (—)
   Antagonist: (—)
   Stabilizer: (—)
 
 Lower | Calf Raises Tip Toe, Diagonal IN
-  Agonist:    Gastrocnemius
+  Agonist:    Gastrocnemius, Soleus
   Synergist:  (—)
   Antagonist: (—)
   Stabilizer: (—)
 
 Lower | Calf Raises Tip Toe, Diagonal OUT
-  Agonist:    Gastrocnemius
+  Agonist:    Gastrocnemius, Soleus
   Synergist:  (—)
   Antagonist: (—)
   Stabilizer: (—)
 
 Lower | Calf Raises Seated, Tip Toe
-  Agonist:    Gastrocnemius
+  Agonist:    Soleus, Gastrocnemius
   Synergist:  (—)
   Antagonist: (—)
   Stabilizer: (—)
 
 Lower | Nordic Ham Curl
-  Agonist:    Hamstrings
+  Agonist:    Hamstrings, Erector Spinae
   Synergist:  Gluteus Maximus
   Antagonist: Quadriceps
-  Stabilizer: Erector Spinae
+  Stabilizer: (—)
+
+Lower | Back Extensions
+  Agonist:    Erector Spinae, Gluteus Maximus, Hamstrings
+  Synergist:  (—)
+  Antagonist: Rectus Abdominis
+  Stabilizer: (—)

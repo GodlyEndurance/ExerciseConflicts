@@ -189,6 +189,7 @@ def inputHandler
 end
 
 require_relative 'UI/WorkoutTypeScreen'
+require_relative 'UI/WorkoutTypeCompletion'
 
 # Main interactive loop
 def main()
@@ -200,14 +201,21 @@ def main()
 
   loop do
     puts "\n#{indent(2)}1. Start"
+    puts "#{indent(2)}2. Check workout completion"
     puts "#{indent(2)}0. Quit"
     choice = prompt("Choice")
+    next puts "#{indent}Invalid choice." unless %w[0 1 2].include?(choice)
     break puts "\n#{indent}Goodbye! (๑>◡<๑)\n" if choice == '0'
-    next puts "#{indent}Invalid choice." unless choice == '1'
+
+    if choice == '2'
+      WorkoutTypeCompletion.new(workouts).run
+      next
+    end
 
     WorkoutTypeScreen.new(workouts).run
     break
   end
+
 end
 
 

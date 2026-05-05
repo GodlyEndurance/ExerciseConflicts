@@ -27,6 +27,7 @@ MUSCLES = [
   'Rhomboids',
   'Rotator Cuff',
   'Serratus Anterior',
+  'Soleus',
   'Teres Major',
   'Triceps Brachii',
   'Upper Traps'

@@ -22,7 +22,7 @@ Pull | Bent-Over Row
   Antagonist: Pectoralis Major, Anterior Deltoid, Triceps Brachii
   Stabilizer: Erector Spinae, Gluteus Maximus, Hamstrings
 
-Pull | Single-Arm Bent-Over Row
+Pull | Single-Arm Row
   Agonist:    Lats (Latissimus Dorsi), Rhomboids, Posterior Deltoid, Biceps Brachii
   Synergist:  Brachialis, Teres Major
   Antagonist: Pectoralis Major, Anterior Deltoid

@@ -14,18 +14,35 @@ class ExerciseScreen
   def run
     loop do
       box("#{@type.upcase} -- SELECT EXERCISE")
-      ex_opts   = @workout.exercises.each_with_index.to_h { |e, i| [i + 1, e] }
-      ex_choice = ask(ex_opts)
+      sent        = saved_entries(@type)
+      ex_opts     = @workout.exercises.each_with_index.to_h do |e, i|
+        label = sent.include?("#{e} (Exercise)") ? "#{e}  (SENT)" : e
+        [i + 1, label]
+      end
+      next_key    = (ex_opts.keys.max || 0) + 1
+      nav_opts    = ex_opts.merge(
+        next_key     => "-- Switch to Isolation Screen (#{@type})",
+        next_key + 1 => "-- Back to screen select (#{@type})",
+        next_key + 2 => "-- Different workout type",
+        next_key + 3 => "-- Check workout type completion"
+      )
+      ex_choice = ask(nav_opts)
       return :quit if ex_choice == 0
+      return :switch_to_isolation   if ex_choice == next_key
+      return :back_to_screen_select  if ex_choice == next_key + 1
+      return :back_to_types          if ex_choice == next_key + 2
+      return :check_completion       if ex_choice == next_key + 3
 
-      show_results(ex_opts[ex_choice])
-      save_entry(@type, 'Exercise', ex_opts[ex_choice]) if yes_no("Save \"#{ex_opts[ex_choice]}\" to PossibleWorkout.txt?")
+      raw_name = ex_opts[ex_choice].sub(/  \(SENT\)$/, '')
+      show_results(raw_name)
+      save_entry(@type, 'Exercise', raw_name) if yes_no("Save \"#{raw_name}\" to PossibleWorkout.txt?")
 
       case next_action
-      when :quit                 then return :quit
-      when :change_type          then return :back_to_types
-      when :switch_to_isolation  then return :switch_to_isolation
+      when :quit                  then return :quit
+      when :change_type           then return :back_to_types
+      when :switch_to_isolation   then return :switch_to_isolation
       when :back_to_screen_select then return :back_to_screen_select
+      when :check_completion      then return :check_completion
       # :same_type => continue exercise loop
       end
     end
@@ -34,6 +51,17 @@ class ExerciseScreen
   private
 
   def show_results(exercise)
+    roles = @workout.muscle_targets[exercise]
+
+    header("MUSCLES FOR: #{exercise}")
+    ROLE_LABELS.each do |role, label|
+      muscles = roles[role]
+      next if muscles.nil? || muscles.empty?
+      puts "\n#{indent}#{label}:"
+      muscles.each { |m| puts "#{indent(3)}-->  #{m}" }
+    end
+    divider
+
     conflicts     = @cf.conflicts_for(exercise, @workout)
     non_conflicts = @workout.exercises.reject { |e| e == exercise || conflicts.key?(e) }
 
@@ -66,12 +94,14 @@ class ExerciseScreen
     choice = ask({ 1 => "Same workout type (#{@type})",
                    2 => "Switch to Isolation Screen (#{@type})",
                    3 => "Back to screen select (#{@type})",
-                   4 => "Different workout type" })
+                   4 => "Different workout type",
+                   5 => "Check workout type completion" })
     case choice
     when 0 then :quit
     when 2 then :switch_to_isolation
     when 3 then :back_to_screen_select
     when 4 then :change_type
+    when 5 then :check_completion
     else        :same_type
     end
   end

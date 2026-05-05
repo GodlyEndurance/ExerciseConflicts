@@ -1,0 +1,40 @@
+=== Core ===
+Hanging Leg/Knee Raises (Exercise)
+Sit-up / Dragon Flag / Ab Rollers (Exercise)
+Russian Twists (Exercise)
+
+=== Lower ===
+Glute Bridges (Exercise)
+Step-Up / Lunges (Exercise)
+BB Front Squat (Exercise)
+Hip Thrust (Exercise)
+RDL (Exercise)
+Nordic Ham Curl (Exercise)
+Back Extensions (Exercise)
+Calf Raises Tip Toe, Vertical (Exercise)
+Calf Raises Tip Toe, Diagonal IN (Exercise)
+Calf Raises Tip Toe, Diagonal OUT (Exercise)
+Calf Raises Seated, Tip Toe (Exercise)
+
+=== Pull ===
+Pull-Ups (Exercise)
+Dead Hangs (Exercise)
+Bent-Over Row (Exercise)
+Single-Arm Row (Exercise)
+Preacher Curls (Isolation)
+Wrist Rollers (Isolation)
+Kelso Shrugs (Isolation)
+Shoulder Shrugs (Isolation)
+Incline Y-Raise (Isolation)
+Eugene Extensions (Isolation)
+
+=== Push ===
+Push-Ups (Exercise)
+Dips (Exercise)
+Shoulder Press (Exercise)
+Bench Press (Exercise)
+Front Raises (Isolation)
+Chest Flyes (Isolation)
+Skull Crushers (Isolation)
+French Press (Isolation)
+

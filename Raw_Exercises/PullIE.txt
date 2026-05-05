@@ -61,3 +61,9 @@ Pull | Wrist Rollers
   Synergist:  Brachioradialis
   Antagonist: (—)
   Stabilizer: Biceps Brachii
+
+Pull | Eugene Extensions
+  Agonist:    Extensors
+  Synergist:  (—)
+  Antagonist: (–)
+  Stabilizer: Anterior Deltoid, Rotator Cuff

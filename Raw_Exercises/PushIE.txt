@@ -26,8 +26,3 @@ Push | Skull Crushers
   Antagonist: Biceps Brachii
   Stabilizer: Anterior Deltoid, Rotator Cuff
 
-Push | Eugene Extensions
-  Agonist:    Triceps Brachii
-  Synergist:  (—)
-  Antagonist: Biceps Brachii
-  Stabilizer: Anterior Deltoid, Rotator Cuff

@@ -49,6 +49,22 @@ module UIAid
     end
   end
 
+  # Returns the array of raw entry strings saved under +type+ in PossibleWorkout.txt.
+  def saved_entries(type)
+    return [] unless File.exist?(OUTPUT_PATH)
+    entries         = []
+    current_section = nil
+    File.foreach(OUTPUT_PATH) do |line|
+      line = line.chomp
+      if line =~ /^=== (.+) ===/
+        current_section = $1
+      elsif current_section == type && !line.strip.empty?
+        entries << line
+      end
+    end
+    entries
+  end
+
   OUTPUT_PATH = File.join(File.dirname(__FILE__), '..', 'PossibleWorkout.txt')
 
   # Appends +entry+ (tagged with +label+) under the +type+ section of

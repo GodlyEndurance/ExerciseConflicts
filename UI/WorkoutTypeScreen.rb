@@ -1,6 +1,7 @@
 require_relative 'UI_Aid'
 require_relative 'ExerciseScreen'
 require_relative 'IsolationScreen'
+require_relative 'WorkoutTypeCompletion'
 
 # Handles workout type selection, then routes to ExerciseScreen or IsolationScreen.
 class WorkoutTypeScreen
@@ -46,6 +47,8 @@ class WorkoutTypeScreen
           screen = IsolationScreen.new(type, @workouts[type][:ie])
         when :switch_to_exercise
           screen = ExerciseScreen.new(type, @workouts[type][:ce])
+        when :check_completion
+          WorkoutTypeCompletion.new(@workouts).run
         when :back_to_screen_select
           new_choice = select_screen(type)
           if new_choice == 0

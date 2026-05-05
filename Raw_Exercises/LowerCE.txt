@@ -22,7 +22,7 @@ Lower | RDL
   Antagonist: Hip Flexors, Quadriceps
   Stabilizer: Lats (Latissimus Dorsi)
 
-Lower | Squats
+Lower | Goblet Squat
   Agonist:    Quadriceps, Gluteus Maximus
   Synergist:  Hamstrings, Adductors, Erector Spinae
   Antagonist: Hamstrings, Hip Flexors
@@ -46,4 +46,8 @@ Lower | Hip Thrust
   Antagonist: Hip Flexors
   Stabilizer: Erector Spinae
 
-  
+Lower | Single Leg Dumbbell/Kettlebell Deadlift
+  Agonist:    Gluteus Maximus, Hamstrings
+  Synergist:  Quadriceps, Erector Spinae, Obliques, Gastrocnemius, Soleus
+  Antagonist: Hip Flexors
+  Stabilizer: Gluteus Medius & Minimus
